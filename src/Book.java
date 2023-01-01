@@ -1,29 +1,29 @@
 public class Book {
-   String Name;
-   String Author;
+   String name;
+   String author;
     public Book(String Name,String Author){
-        this.Author=Author;
-        this.Name=Name;
+        this.author=Author;
+        this.name=Name;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
     public void setAuthor(String author) {
-        Author = author;
+        this.author = author;
     }
 
     @Override
     public String toString() {
-        return "Название книги: " + Name+", Автор - "+Author+ "\n";
+        return "Название книги: " + name+", Автор - "+author+ "\n";
     }
 }
